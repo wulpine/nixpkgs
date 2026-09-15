@@ -8086,6 +8086,8 @@ with pkgs;
   font-awesome_7 = (callPackage ../data/fonts/font-awesome { }).v7;
   font-awesome = font-awesome_7;
 
+  googlesans-static = callPackage ../by-name/go/googlesans/package.nix { static = true; };
+
   palenight-theme = callPackage ../data/themes/gtk-theme-framework { theme = "palenight"; };
 
   amarena-theme = callPackage ../data/themes/gtk-theme-framework { theme = "amarena"; };
